@@ -1,5 +1,3 @@
-import { Link } from "gatsby";
-import { useState } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 import NavbarElements from "./NavbarElements";
@@ -9,17 +7,18 @@ interface Props {
 }
 const Navbar: React.FC<Props> = ({ setIsOpen }) => {
   return (
-    <nav className="bg-white md:bg-transparent px-2 sm:px-4 py-2.5 fixed top-0 left-0 right-0 h-20 z-50">
+    <nav className="bg-transparent shadow-sm md:shadow-none px-2 sm:px-4 py-2.5 fixed top-0 left-0 right-0 h-20 z-50">
       <div className="w-full flex flex-wrap md:flex-nowrap justify-between items-center">
         <StaticImage
           src="../images/logo.png"
           alt="iedclogo"
           width={70}
           height={60}
+          className="scale-90"
         />
         <button
           type="button"
-          className="inline-flex items-center p-2 ml-3 text-sm text-purple-800 rounded-lg md:hidden hover:bg-purple-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          className="inline-flex items-center p-2 ml-3 text-sm text-purple-800 rounded-lg md:hidden hover:bg-purple-100 focus:outline-none"
           aria-controls="navbar-default"
           aria-expanded="false"
           onClick={() => setIsOpen((prev: any) => !prev)}
