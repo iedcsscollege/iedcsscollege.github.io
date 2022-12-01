@@ -2,6 +2,10 @@ import * as React from "react";
 import type { HeadFC } from "gatsby";
 import Layout from "../components/Layout";
 import SocialIcons from "../components/SocialIcons";
+import bgImage from "../images/background.svg";
+import rocket from "../images/rocket.svg";
+import star from "../images/star.svg";
+import fire from "../images/fire.gif";
 
 const IndexPage = () => {
   return (
@@ -12,19 +16,25 @@ const IndexPage = () => {
         </div>
         <div
           id="background"
-          className="absolute left-0 right-0 top-0 w-full h-full bg-[url('../images/background.svg')] bg-no-repeat [background-position:-2px_0.5rem] bg-cover"
+          style={{ backgroundImage: `url(${bgImage})` }}
+          className={`absolute left-0 right-0 top-0 w-full h-full bg-no-repeat [background-position:-2px_0.5rem] bg-cover`}
         >
           <div
             id="rocket"
-            className="absolute left-0 top-0 md:right-[5rem] md:left-auto w-[345px] h-[488px] bg-[url('../images/rocket.svg')] bg-no-repeat [animation:liftoff_10s_ease-in-out_infinite] scale-[0.6] z-[2]"
+            style={{ backgroundImage: `url(${rocket})` }}
+            className="absolute left-0 top-0 md:right-[5rem] md:left-auto w-[345px] h-[488px] bg-no-repeat [animation:liftoff_10s_ease-in-out_infinite] scale-[0.6] z-[2]"
           >
             <div
               id="fire"
-              className="absolute bottom-0 left-0 w-[146px] h-[156px] bg-[url('../images/fire.gif')] bg-no-repeat bg-cover rotate-[210deg] bg-[center_center] translate-y-[5.8rem] translate-x-[-2rem] scale-110"
+              style={{ backgroundImage: `url(${fire})` }}
+              className="absolute bottom-0 left-0 w-[146px] h-[156px] bg-no-repeat bg-cover rotate-[210deg] bg-[center_center] translate-y-[5.8rem] translate-x-[-2rem] scale-110"
             />
           </div>
         </div>
-        <div className="absolute left-0 right-0 top-0 w-full h-full bg-[url('../images/star.svg')] bg-no-repeat [background-position:0_8.5rem] animate-[twinkle_5s_ease-in-out_infinite]" />
+        <div
+          style={{ backgroundImage: `url(${star})` }}
+          className="absolute left-0 right-0 top-0 w-full h-full bg-no-repeat [background-position:0_8.5rem] animate-[twinkle_5s_ease-in-out_infinite]"
+        />
 
         <div className="absolute bottom-3 left-3 md:left-8 text-white leading-[2.5rem] md:leading-[3rem]">
           <h1 className="text-[2rem] md:text-[2.3rem] font-light">
