@@ -1,12 +1,11 @@
 import * as React from "react";
 import type { HeadFC } from "gatsby";
 import Layout from "../components/Layout";
-import { StaticImage } from "gatsby-plugin-image";
 import SocialIcons from "../components/SocialIcons";
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <Layout isHome={true}>
       <div className="relative w-full h-full">
         <div className="absolute right-5 md:right-6 top-[40%] z-[3] h-40">
           <SocialIcons />

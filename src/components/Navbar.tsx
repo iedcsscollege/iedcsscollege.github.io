@@ -4,10 +4,15 @@ import NavbarElements from "./NavbarElements";
 
 interface Props {
   setIsOpen: (fn: any) => void;
+  isHome: boolean;
 }
-const Navbar: React.FC<Props> = ({ setIsOpen }) => {
+const Navbar: React.FC<Props> = ({ setIsOpen, isHome }) => {
   return (
-    <nav className="bg-transparent shadow-sm md:shadow-none px-2 sm:px-4 py-2.5 fixed top-0 left-0 right-0 h-20 z-50">
+    <nav
+      className={`${
+        isHome ? "bg-transparent" : "bg-white"
+      } shadow-sm md:shadow-none px-2 sm:px-4 py-2.5 fixed top-0 left-0 right-0 h-20 z-50`}
+    >
       <div className="w-full flex flex-wrap md:flex-nowrap justify-between items-center">
         <StaticImage
           src="../images/logo.png"
