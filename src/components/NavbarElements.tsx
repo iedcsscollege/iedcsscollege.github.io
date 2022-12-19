@@ -17,7 +17,7 @@ const NavbarElements: React.FC<NavbarElementsProps> = () => {
       </li>
       <li className="mb-1 text-center md:mb-0 w-full md:w-auto hover:bg-gray-50 md:hover:bg-white">
         <Link
-          to="/about"
+          to="https://iedcsscollege.github.io/webdev/about"
           className="text-base text-purple-700 md:rounded-lg ml-1 lg:ml-7 p-2 md:hover:shadow-lg hover:shadow-purple-800"
           activeClassName="md:shadow-sm md:shadow-purple-800"
         >
@@ -26,7 +26,7 @@ const NavbarElements: React.FC<NavbarElementsProps> = () => {
       </li>
       <li className="mb-1 text-center md:mb-0 w-full md:w-auto hover:bg-gray-50 md:hover:bg-white">
         <Link
-          to="/events"
+          to="https://iedcsscollege.github.io/webdev/events"
           className="text-base text-purple-700 md:rounded-lg ml-1 lg:ml-7 p-2 md:hover:shadow-lg hover:shadow-purple-800"
           activeClassName="md:shadow-sm md:shadow-purple-800"
         >
@@ -35,7 +35,7 @@ const NavbarElements: React.FC<NavbarElementsProps> = () => {
       </li>
       <li className="mb-1 text-center md:mb-0 w-full md:w-auto hover:bg-gray-50 md:hover:bg-white">
         <Link
-          to="/achievements"
+          to="https://iedcsscollege.github.io/webdev/achievenets"
           className="text-base text-purple-700 md:rounded-lg ml-1 lg:ml-7 p-2 md:hover:shadow-lg hover:shadow-purple-800"
           activeClassName="md:shadow-sm md:shadow-purple-800"
         >
@@ -44,7 +44,7 @@ const NavbarElements: React.FC<NavbarElementsProps> = () => {
       </li>
       <li className="mb-1 text-center md:mb-0 w-full md:w-auto hover:bg-gray-50 md:hover:bg-white">
         <Link
-          to="/team"
+          to="https://iedcsscollege.github.io/webdev/team-index"
           className="text-base text-purple-700 md:rounded-lg ml-1 lg:ml-7 p-2 md:hover:shadow-lg hover:shadow-purple-800"
           activeClassName="md:shadow-sm md:shadow-purple-800"
         >
@@ -53,7 +53,7 @@ const NavbarElements: React.FC<NavbarElementsProps> = () => {
       </li>
       <li className="mb-1 text-center md:mb-0 w-full md:w-auto hover:bg-gray-50 md:hover:bg-white">
         <Link
-          to="/contact"
+          to="https://iedcsscollege.github.io/webdev/contact2"
           className="text-base text-purple-700 md:rounded-lg ml-1 lg:ml-7 p-2 md:hover:shadow-lg hover:shadow-purple-800"
           activeClassName="md:shadow-sm md:shadow-purple-800"
         >

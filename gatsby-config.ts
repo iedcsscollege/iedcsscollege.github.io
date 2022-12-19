@@ -3,7 +3,7 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `iedcsscollege.github.io`,
-    siteUrl: `https://www.iedcsscollege.github.io/webdev`,
+    siteUrl: `https://iedcsscollege.github.io`,
   },
   pathPrefix: "/webdev",
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
